@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rover Control Interface</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Rover Control Interface</header>
+
+    <main>
+      <section id="video-section">
+        <h2>Live Rover Video</h2>
+        <img
+          src="http://localhost:9000/person_stream"
+          width="640"
+          height="480"
+        />
+      </section>
+
+      <section id="joystick-section">
+        <h2>Rover Joystick</h2>
+        <div id="joystick-base">
+          <div id="joystick-knob"></div>
+        </div>
+        <div id="joystick-output">x: 0, y: 0</div>
+      </section>
+
+      <section id="details-section">
+        <h2>Detected Humans</h2>
+        <div id="details">
+          <p>No detections yet...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
